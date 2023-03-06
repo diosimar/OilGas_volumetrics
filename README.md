@@ -1,4 +1,4 @@
-![analytics](https://img.shields.io/badge/Machine%20Learning-Medicina%20predictiva-green)
+![analytics](https://img.shields.io/badge/Machine%20Learning-Oil%20inplace-green)
 
 # Oil & Gas volumetrias ( OIP)
 
