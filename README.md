@@ -34,6 +34,8 @@ En este analisis, nos sentraremos en el metodo para calculo de OOIP por medio de
 
 ## Variables_de_estudio
 
+**conjunto de datos volumetric_data**
+
 Se consideran mediciones registradas en diferentes puntos de  un yacimiento determinado para analisis antes del perforado, en las cuales se miden las sigueintes caracteristicas:
 
 * Profundidad del pozo
@@ -42,6 +44,35 @@ Se consideran mediciones registradas en diferentes puntos de  un yacimiento dete
 * Espesor de la roca
 
 las cuales son utilizadas por medio de metodos de calculos volumetricos  tales como  piramidal, trapezoide  para determinar el gas&oil original en el lugar de analisi ( OOIP), este metodo realiza un mapeo interpolado de los puntos medibles al rededor del pozo, con el objetivo de estimar la cantidad de volumen de petroleo esperado, bajo las condiciones de la tierra por las caracteristicas mencionadas anteriormente.
+ 
+**Conjunto de datos volve production data set**
+
+se considera varaibalas de medicion por meido de procesos de litologia para determinar series temporales para observar la presencia de hidrocarburos por tipo de roca y su profundidad.
+
+se  consideran las siguientes variables aleatorias
+
+* 'DEPTH',
+* 'ABDCQF01',
+* 'ABDCQF02',
+* 'ABDCQF03',
+* 'ABDCQF04',
+* 'BS',
+* 'CALI',
+* 'DRHO',
+* 'DT',
+* 'DTS',
+* 'GR',
+* 'NPHI',
+* 'PEF',
+* 'RACEHM',
+* 'RACELM',
+* 'RD',
+* 'RHOB',
+* 'RM',
+* 'ROP',
+* 'RPCEHM',
+* 'RPCELM',
+* 'RT'
 -----------------------------------------------------------------------
 
 ## Prerequisitos
@@ -58,6 +89,8 @@ Para la ejecución de la herramienta de análisis se necesita installar las  sig
 
 ## Entrenamiento_modelo_ml_y_evaluacion
 
+Se tiene dos archivos formato ipynb, en el primero se almacena la estimaciones de volumetrias utilizando los metodos estaticos Trapezoidal, Pyramidal y Simpson 1/3 para calcular la cantidad de hidrocarburo original en el yacimiento antes de su explotación. esta unidad de medida se expresa en **millones STB**
 
+Por otro lado,  se muestran las series de las mediciones de litologia con referencia a la prfundidad del pozo ( yacimiento ) de las sigueintes variables  'NPHI', 'RHOB', 'GR', 'RT', 'PEF', 'CALI', 'DT' , con el objetivo de calcular  el triple combo de logs  para ver las condiciones pretrofisicas del yacimiento ( esto se encuentra en el notebook serie.ipynb)
 
 ## Guía_de_usuario
