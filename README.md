@@ -19,7 +19,7 @@ En este analisis, nos sentraremos en el metodo para calculo de OOIP por medio de
 
 <h1 align="center"> Analitica de OOIP para Evaluaciòn de yacimientos- </h1>
 
-<p align="center"><img src="https://www.drillingformulas.com/wp-content/uploads/2016/04/Volumetric-Estimation-of-Fluid-Reserves.jpg"/></p> 
+<p align="center"><img src="https://1.bp.blogspot.com/-MKDWvZWzv1M/XnKAU_STkNI/AAAAAAAACa0/Nytz-8vhtB8DdUfV6FctV7-gV7YWd9RsgCLcBGAsYHQ/s320/map11_medium.jpg"/></p> 
 
 # Tabla de contenidos:
 ---
@@ -28,6 +28,7 @@ En este analisis, nos sentraremos en el metodo para calculo de OOIP por medio de
 - [Prerequisitos](#Prerequisitos)
 - [Analisis_descriptivo](#Analisis_descriptivo)
 - [Entrenamiento_modelo_ml_y_evaluacion](#Entrenamiento_modelo_ml_y_evaluacion)
+- [Definiciones-interpretaciones](#Definiciones-interpretaciones)
 - [Guía_de_usuario](#Guía_de_usuario)
 
 --------------------------------------------------------------------------------------
@@ -93,4 +94,38 @@ Se tiene dos archivos formato ipynb, en el primero se almacena la estimaciones d
 
 Por otro lado,  se muestran las series de las mediciones de litologia con referencia a la prfundidad del pozo ( yacimiento ) de las sigueintes variables  'NPHI', 'RHOB', 'GR', 'RT', 'PEF', 'CALI', 'DT' , con el objetivo de calcular  el triple combo de logs  para ver las condiciones pretrofisicas del yacimiento ( esto se encuentra en el notebook serie.ipynb)
 
+## Definiciones-interpretaciones
+
+### Grafico de combo triple de log
+
+El gráfico de combo triple de log, también conocido como gráfico de registro triple, es un tipo de gráfico utilizado en la industria de petróleo y gas para visualizar datos recopilados durante la perforación de un pozo. El gráfico combina tres curvas de registro diferentes: registro de densidad (**RHOB**), registro de resistividad(**Resistivity**) y registro de porosidad (**NPHI**).
+
+Cada curva del registro triple se representa en un eje vertical separado, con la profundidad del pozo en el eje horizontal. Los valores medidos en cada registro se muestran en diferentes escalas, por lo que cada curva puede tener una amplitud diferente.
+
+El registro de densidad muestra la densidad de la formación geológica que rodea el pozo, lo que puede proporcionar información sobre la porosidad y el contenido de fluidos. El registro de resistividad mide la resistencia eléctrica de la formación, lo que puede ayudar a identificar la presencia de agua salada o hidrocarburos. El registro de porosidad mide la cantidad de espacio vacío en la roca, que es importante para determinar el potencial de producción de hidrocarburos.
+
+Al combinar estas tres curvas en un solo gráfico, se puede obtener una imagen más completa de las características del yacimiento de hidrocarburos. Por ejemplo, si la curva de densidad muestra una formación menos densa y la curva de porosidad muestra una mayor porosidad, esto puede indicar la presencia de una formación geológica porosa que puede contener hidrocarburos. Si la curva de resistividad muestra un aumento en la resistencia eléctrica, esto puede indicar la presencia de agua salada.
+
+En general, el gráfico de combo triple de log permite a los ingenieros de petróleo y gas evaluar y comprender las características del yacimiento de hidrocarburos para tomar decisiones informadas sobre la perforación, la producción y la exploración.
+
+### Neutron density plot 
+
+Un gráfico de densidad de neutrones, también conocido como registro de densidad de neutrones (ND), se utiliza en la industria de petróleo y gas para evaluar la densidad de la formación geológica que rodea un pozo de perforación. Este gráfico se genera midiendo la cantidad de neutrones emitidos por una fuente de neutrones hacia la formación y registrando la cantidad de neutrones que regresan al detector.
+
+En el contexto de la evaluación del yacimiento de hidrocarburos, el gráfico de densidad de neutrones puede proporcionar información sobre la porosidad de la roca circundante, que es importante para determinar la cantidad de petróleo o gas que puede contener la formación. La porosidad se refiere a la cantidad de espacio vacío en la roca, que puede contener líquidos y gases.
+
+El gráfico de densidad de neutrones muestra la densidad de la formación geológica en función de la profundidad del pozo. En el eje vertical se representa la profundidad, mientras que en el eje horizontal se muestra la densidad. La densidad se puede expresar en unidades de gramos por centímetro cúbico (g/cm³) o en unidades de porcentaje (%).
+
+Los valores de densidad más altos en el gráfico indican formaciones geológicas más densas, mientras que los valores más bajos indican formaciones menos densas. La porosidad de la roca se puede calcular a partir del gráfico de densidad de neutrones utilizando la relación entre la densidad de la roca y la densidad de una roca completamente sólida.
+
+En resumen, el gráfico de densidad de neutrones es una herramienta valiosa en la evaluación de yacimientos de hidrocarburos, ya que proporciona información sobre la porosidad y densidad de la formación geológica circundante.
+
 ## Guía_de_usuario
+El repositorio contempla los siguientes folders y archivos 
+*  **Data** : se almacena  los datos  que  se utilizan para el analisis,  inicialmente se carga el archivo llamado **volumetric_data** para realizar el calculo del **OOIP** de un yacimiento ,  en este archivero se puede encontrar una carpeta que se llama volve donde  se almacenan archivos .las de popsos  para analisis petrofisico y de litologia del yacimiento de hidrocarburos volvo.
+* **volumetrics**: paquete que contiente  las funciones  de interes para utilizar en el calculo del **OOIP**
+* **Estimacion_volumetria_OIP** : notebook de jupyter que contine el paso a paso para estimar la cantidad de petroleo (gas) en un yacimiento, considerando metodos de analisis estaticos 
+
+<p align="center"><img src="https://cdn.slidesharecdn.com/ss_thumbnails/calculodelpoesyreservas-161007173038-thumbnail.jpg?width=600&height=600&fit=bounds"/></p> 
+
+* **serie** : notebook donde se encuentra analisis base de litologia para determninar el comportamiento del subsuelo del yacimiento, permite identificar razgos fundamentales de la perforación durante la exploracion de los pozos.
