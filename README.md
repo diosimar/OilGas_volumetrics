@@ -52,28 +52,44 @@ se considera varaibalas de medicion por meido de procesos de litologia para dete
 
 se  consideran las siguientes variables aleatorias
 
-* 'DEPTH',
-* 'ABDCQF01',
-* 'ABDCQF02',
-* 'ABDCQF03',
-* 'ABDCQF04',
-* 'BS',
-* 'CALI',
-* 'DRHO',
-* 'DT',
-* 'DTS',
-* 'GR',
-* 'NPHI',
-* 'PEF',
-* 'RACEHM',
-* 'RACELM',
-* 'RD',
-* 'RHOB',
-* 'RM',
-* 'ROP',
-* 'RPCEHM',
-* 'RPCELM',
-* 'RT'
+* **DEPTH**: profundidad medida en pies o metros.
+
+* ** ABDCQF01, ABDCQF02, ABDCQF03, ABDCQF04**: Variables que indican la presencia o ausencia de determinados litotipos, minerales o rocas en la formación, a partir de la respuesta de los registros geofísicos.
+
+* **BS**: Tamaño de los granos o partículas de la roca en la formación, medida en micrómetros.
+
+* **CALI**: Diámetro del pozo, medida en pulgadas o centímetros.
+
+* **DRHO**: Curva de corrección de densidad (DRHO) se calcula a partir del Diferencial de densidad entre el lodo de perforación y la formación rocosa; proporciona una indicación adicional de la calidad de los datos de densidad aparente. Los valores de DRHO superiores a 0,1 g/cm3 indican datos de densidad poco fiables
+
+
+* **DT**: Tiempo que tarda una onda acústica en viajar desde el emisor hasta el receptor, medida en microsegundos por pie o milisegundos por metro. 
+
+* **DTS**: Velocidad de propagación de la onda acústica perpendicular a la dirección de perforación, medida en microsegundos por pie o milisegundos por metro. El registro de DTS se utiliza en combinación con otros registros geofísicos para identificar la litología, determinar la porosidad, evaluar la presencia de fracturas y zonas permeables, y para calcular la densidad de la formación geológica circundante. Además, el registro de DTS es útil en la evaluación de la integridad de las formaciones, la identificación de capas de gas y la determinación de la ubicación de los niveles de fluidos en la roca.
+
+* **GR**: Densidad de radioactividad de la formación rocosa, medida en unidades API ( Cuando los hidrocarburos llenan los poros de la roca, disminuyen la radiación gamma que se recibe en el pozo. Como resultado, los registros de rayos gamma pueden proporcionar información sobre la saturación de hidrocarburos en la roca y la porosidad efectiva de la formación).
+
+* **NPHI**: Porosidad efectiva de la formación, medida en fracción de volumen.
+
+* **PEF**: Fluorescencia de los hidrocarburos en la formación, medida en unidades de API. El registro de fluorescencia inducida por fotones se combina a menudo con otros registros de pozo, como el registro de porosidad y el registro de resistividad, para obtener una imagen más completa de la formación y para mejorar la precisión de las estimaciones de los volúmenes y calidad de los hidrocarburos presentes en la formación.
+
+* **RACEHM**: Resistividad aparente de la formación medida por el registro de inducción, corregida por efectos de invasión del lodo de perforación en zonas permeables. El registro RACEHM puede proporcionar información sobre la composición y la calidad del petróleo y del gas presentes en la formación, incluyendo la densidad, la viscosidad, el contenido de azufre y la relación entre los diferentes componentes de hidrocarburos. 
+
+* **RACELM**: Resistividad aparente de la formación medida por el registro de inducción, corregida por efectos de invasión del lodo de perforación en zonas poco permeables.
+
+* **RD**: Densidad de radioactividad de la formación rocosa, medida en unidades API. Es importante porque puede proporcionar información sobre la porosidad y la permeabilidad de la formación; junto con otros registros petrofisicos se puede evaluar la calidad de los hidrocarburos presentes en la formación.
+
+* **RHOB**: Densidad de la formación, medida en g/cc. El registro RHOB se utiliza comúnmente en combinación con otros registros de pozo, como el registro de porosidad y el registro de resistividad, para obtener una imagen completa de la formación y para mejorar la precisión de las estimaciones de los volúmenes.
+
+* **RM**: Resistividad de la formación medida por el registro de microondas, que es menos sensible a la invasión del lodo de perforación que otros registros eléctricos.
+
+* **ROP**: Velocidad de perforación de la broca en la formación, medida en pies por hora o metros por hora.
+
+* **RPCEHM**: Resistividad de la formación medida por el registro de porosidad de espectro de formación, corregida por efectos de invasión del lodo de perforación en zonas permeables.
+
+* **RPCELM**: Resistividad de la formación medida por el registro de porosidad de espectro de formación, corregida por efectos de invasión de la lodo de perforación en zonas poco permeables.
+
+* **RT**: Resistividad total de la formación medida por el registro de cuatro electrodos, que es menos sensible a la invasión de la lodo de perforación que otros registros eléctricos.
 -----------------------------------------------------------------------
 
 ## Prerequisitos
